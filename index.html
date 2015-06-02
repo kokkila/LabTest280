@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="javascript.js"></script> 
+    <title>Assignment 2</title>
+  </head>
+  <body>
+    <div id="box">
+      <div id="logo1">
+			<img src="images/turnon.png" alt="Picture Not Available" height="130" width="250">
+      </div>
+      <div id="logo2">  
+			<img src="images/turnon.png" alt="Picture Not Available" height="130" width="250"> 
+      </div>
+	  <h1>Infosys 280<br />Assignment 2<br /></h1>
+	  <p class="callout">Good luck for your assignment 2</p>
+      <nav id="mainnav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="http://www.google.com">Google</a></li> 
+          <li><a href="http://www.w3schools.com">W3School</a></li>
+          <li><a href="myAnswer.html">My Answer</a></li>
+        </ul>
+      </nav>
+		<div id="upcom">
+        <h2>Buttons</h2>
+          <p><input type="button" id="button1" value="Question 6(a)"></p>
+		  <p><input type="button" id="button2" value="Question 6(b)"></p>
+		  <p><input type="button" id="button3" value="Question 6(c)"></p>
+		  <script>
+				$(document).ready(function(){
+					$("#button1").click(function(){
+						$("img").toggle();
+					});
+					$("#button2").click(function(){
+						$("#button1").css("color", "green");
+						$("#button2").css("color", "blue");
+						$("#button3").css("color", "yellow");
+						$("h1").css("font-family", "verdana sans-serif");
+					});
+					$("#button3").click(function(){
+						$("#mainnav").css("width", "800px");
+						$("#mainnav").css("opacity", "0.75");
+					});
+				});
+		</script>
+        </div>	
+    </div>
+  </body>
+</html>
